@@ -8,7 +8,7 @@
             ItemName = itemName;
             Quantity = quantity;
             ItemPrice = itemPrice;
-            TotalPrice = TotalPrice;
+            TotalPrice = totalPrice;
             Observation = observation;
         }
 
