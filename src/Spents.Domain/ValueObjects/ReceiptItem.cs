@@ -2,9 +2,8 @@
 {
     public record ReceiptItem
     {
-        public ReceiptItem(Guid id, string itemName, short quantity, decimal itemPrice, decimal totalPrice, string observation)
+        public ReceiptItem(string itemName, short quantity, decimal itemPrice, decimal totalPrice, string observation)
         {
-            Id = id;
             ItemName = itemName;
             Quantity = quantity;
             ItemPrice = itemPrice;
