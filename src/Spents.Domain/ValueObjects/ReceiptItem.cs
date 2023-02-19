@@ -2,20 +2,11 @@
 {
     public record ReceiptItem
     {
-        public ReceiptItem(string itemName, short quantity, decimal itemPrice, decimal totalPrice, string observation)
-        {
-            ItemName = itemName;
-            Quantity = quantity;
-            ItemPrice = itemPrice;
-            TotalPrice = totalPrice;
-            Observation = observation;
-        }
-
-        public Guid Id { get; set; }
-        public string ItemName { get; set; }
-        public short Quantity { get; set; }
-        public decimal ItemPrice { get; set; }
-        public string Observation { get; set; }
-        public decimal TotalPrice { get; set; }
+        public virtual Guid Id { get; set; }
+        public virtual string ItemName { get; set; } = null!;
+        public virtual short Quantity { get; set; }
+        public virtual decimal ItemPrice { get; set; }
+        public virtual string Observation { get; set; } = null!;
+        public virtual decimal TotalPrice { get; set; }
     }
 }

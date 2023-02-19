@@ -10,7 +10,7 @@
     <PackageLicenseExpression> AFL-1.1</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageIcon>27566574.jpg</PackageIcon>
-    <Version>1.2.0</Version>
+    <Version>1.2.2</Version>
     <Authors>Felipe Mattioli dos Santos</Authors>
   </PropertyGroup>
 
@@ -23,6 +23,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="2.19.0" />
   </ItemGroup>
 
 </Project>
